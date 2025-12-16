@@ -14,4 +14,14 @@ public class ScoreManager : MonoBehaviour
         score++;
         Debug.Log("Score: " + score);
     }
+
+    public static void SaveHighScore()
+    {
+        int highScore = PlayerPrefs.GetInt("Record", 0);
+        if (score > highScore)
+        {
+            PlayerPrefs.SetInt("Record", score);
+            PlayerPrefs.Save();
+        }
+    }
 }
