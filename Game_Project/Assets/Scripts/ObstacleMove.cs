@@ -13,4 +13,13 @@ public class ObstacleMove : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            ScoreManager.AddScore();
+            Destroy(gameObject);
+            Debug.Log("score");
+        }
+    }
 }
