@@ -18,4 +18,10 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Time.timeScale = 0;
+        Debug.Log("Game Over");
+    }
+
 }
