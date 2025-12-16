@@ -3,6 +3,8 @@ Logs
 Packages
 Temp
 UserSettings
+obj
 .vsconfig
+.vs
 Assembly-CSharp.csproj
 Game_Project.sln

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2683971646478872983}
   - component: {fileID: 6567097975447974675}
   - component: {fileID: 5885601766438245236}
+  - component: {fileID: -8524469637344374580}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -166,3 +167,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8524469637344374580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360531781856505531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7895cc221a50cf04b9731805ad20a1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleMove
+  speed: 2
