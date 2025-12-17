@@ -9,16 +9,14 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        // Ensure panel is hidden at start
         gameOverPanel.SetActive(false);
-        Time.timeScale = 1; // normal speed
+        Time.timeScale = 1;
     }
 
     public void GameOver()
     {
-        // Show Game Over UI
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0; // pause game
+        Time.timeScale = 0;
         ScoreManager.SaveHighScore();
 
         if (MusicManager.instance != null)
@@ -29,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Time.timeScale = 1; // resume game
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

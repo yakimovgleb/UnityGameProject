@@ -14,12 +14,12 @@ public class MenuManager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameLoop"); // Replace with your game scene name
+        SceneManager.LoadScene("GameLoop");
     }
 
     public void QuitGame()
     {
         Debug.Log("Quit Game");
-        Application.Quit(); // Works in build
+        Application.Quit();
     }
 }

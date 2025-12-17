@@ -10,11 +10,9 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        // Update time
         elapsedTime += Time.deltaTime;
         timeText.text = "Time: " + elapsedTime.ToString("F1") + "s";
 
-        // Update score
         scoreText.text = "Score: " + ScoreManager.score;
     }
 }
