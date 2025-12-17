@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
         gameOverPanel.SetActive(true);
         Time.timeScale = 0; // pause game
         ScoreManager.SaveHighScore();
+
+        if (MusicManager.instance != null)
+        {
+        MusicManager.instance.playGameOverMusic();
+        }
     }
 
     public void RestartGame()
